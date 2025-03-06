@@ -1,0 +1,39 @@
+:root {
+    --text-color: #3B3B3B;
+    --accent-text: #8C050C;
+    --border-color: #F0CAD0;
+
+}
+
+body {
+    font-family: "Montserrat", "Arial", serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ========================================== */
+
+.title {
+    font-family: 'Good Vibes Pro', serif;
+    font-weight: 400;
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Good Vibes Pro';
+    src: local('Good Vibes Pro'), local('GoodVibesPro'),
+        url('GoodVibesPro.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: local('Jost Regular'), local('Jost-Regular'),
+        url('Jost-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

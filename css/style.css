@@ -1,15 +1,25 @@
 :root {
-    --text-color: #3B3B3B;
-    --accent-text: #8C050C;
-    --border-color: #F0CAD0;
-
+    --text-color: #3b3b3b;
+    --accent-text: #8c050c;
+    --border-color: #f0cad0;
+    --bg-color: #fff;
 }
 
 body {
-    font-family: "Montserrat", "Arial", serif;
-    line-height: 1.5;
+    font-family: "Jost", "Arial", serif;
+    line-height: 1.1;
     color: var(--text-color);
     background: var(--bg-color);
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Good Vibes Pro", "Arial", serif;
 }
 
 .wrapper {
@@ -33,7 +43,111 @@ body {
 
 /* ========================================== */
 
-.title {
-    font-family: 'Good Vibes Pro', serif;
-    font-weight: 400;
+.main__header {
+}
+.container {
+}
+.header__inner {
+}
+.header__inner-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__inner-hero {
+    padding: 15px;
+}
+.hero__inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 0 20px;
+}
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero__content h1 {
+    font-size: 2rem;
+}
+.hero__content p {
+    text-align: center;
+}
+.hero__content span {
+    color: var(--accent-text);
+    font-family: "Good Vibes Pro", "Arial", serif;
+    font-size: 2rem;
+}
+
+.hero__content-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.hero__content-img img {
+    max-width: 50%;
+}
+
+.hero__img {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.header-line {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: scale(0.4);
+    z-index: 10;
+}
+
+.hero__img img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+/* =============================================== */
+
+.main__body-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__body-timer {
+    display: flex;
+    justify-content: center;
+}
+
+.timer {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.timer__item {
+    position: relative;
+}
+
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+.swiper-slide img {
+    max-width: 300px;
 }

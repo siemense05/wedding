@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding</title>
-    <link rel="shortcut icon" href="img/DS.svg" type="image/x-icon">
-    <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="container">
-            <header class="header">
-                <h1 class="title">
-                    НАША СВАДЬБА
-                </h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>wedding</title>
+        <link rel="shortcut icon" href="img/DS.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="body">
+        <div class="wrapper">
+            <header class="header main__header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__inner-top">
+                            <div class="nav">МЕНЮ</div>
+                        </div>
+                        <section class="header__inner-hero">
+                            <div class="container">
+                                <div class="hero__inner">
+                                    <div class="hero__content">
+                                        <h1>Дорогие родные и друзья</h1>
+                                        <p>
+                                            Мы рады сообщить, <br />что женимся!
+                                        </p>
+                                        <span>10 Июля 2025</span>
+                                        <div class="hero__content-img">
+                                            <img
+                                                src="img/calendar.png"
+                                                alt="календарь"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="hero__img">
+                                        <img
+                                            src="img/photo1.jpg"
+                                            alt="даша и семен"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </header>
+            <main class="main main__body">
+                <div class="container">
+                    <div class="main__body-inner">
+                        <div class="main__body-timer">
+                            <div class="timer">
+                                <div class="timer__item timer__days">00</div>
+                                <div class="separator">:</div>
+                                <div class="timer__item timer__hours">00</div>
+                                <div class="separator">:</div>
+                                <div class="timer__item timer__minutes">00</div>
+                                <div class="separator">:</div>
+                                <div class="timer__item timer__seconds">00</div>
+                            </div>
+                        </div>
+                        <h2 class="main__body-title">Дарья+Семен</h2>
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="img/we/photo1.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/we/photo2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/we/photo3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/we/photo4.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/we/photo5.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/we/photo6.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/we/photo7.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="img/we/photo8.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-    </div>
-</body>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

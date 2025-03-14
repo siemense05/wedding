@@ -1,3 +1,16 @@
+
+
+const swiper = new Swiper(".main__body-swiper", {
+    slidesPerView: 3,
+    grabCursor: true,
+    spaceBetween: 0,
+    resizeObserver: false,
+    centeredSlides: true,
+    initialSlide: 1,
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     // Установите конечную дату
     const deadline = new Date("2025-07-10T00:00:00");
@@ -53,13 +66,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // Запустите таймер
     updateTimer();
     const timerId = setInterval(updateTimer, 1000);
-});
-
-const swiper = new Swiper(".swiper", {
-    slidesPerView: 3,
-    loop: true,
-    autoplay: {
-        delay: 5000,
-    },
-    
 });

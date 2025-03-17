@@ -4,7 +4,6 @@ const swiper = new Swiper(".main__body-swiper", {
     slidesPerView: 3,
     grabCursor: true,
     spaceBetween: 0,
-    resizeObserver: false,
     centeredSlides: true,
     initialSlide: 1,
 });

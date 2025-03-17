@@ -1,6 +1,14 @@
 
 
-const swiper = new Swiper(".main__body-swiper", {
+const swiperBody = new Swiper(".main__body-swiper", {
+    slidesPerView: 3,
+    grabCursor: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    initialSlide: 1,
+});
+
+const swiperExamples = new Swiper(".swiper__examples", {
     slidesPerView: 3,
     grabCursor: true,
     spaceBetween: 0,

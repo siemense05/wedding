@@ -80,3 +80,68 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTimer();
     const timerId = setInterval(updateTimer, 1000);
 });
+
+
+// MODAL
+
+const btn = document.querySelector('.form-guest__button')
+const modal = document.querySelector('.modal')
+
+btn.addEventListener('click', openModal)
+modal.addEventListener('click', closeModal)
+document.addEventListener('keydown', closeModal)
+
+
+function openModal(e) {
+    e.preventDefault()
+    document.body.classList.toggle('body--opened-modal')
+}
+
+function closeModal(e) {
+    const target = e.target
+
+    if (target.closest('.modal__close') || target.classList.contains('modal') || target.classList.contains('button') || e.code === 'Escape'
+    )
+        
+    document.body.classList.remove('body--opened-modal')
+}
+
+
+// FORM
+
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownCustom = document.querySelector('.custom-dropdown')
+    const dropdownHeader = document.querySelector('.dropdown-header');
+    const dropdownOptions = document.querySelector('.dropdown-options');
+    const selectedOptionInput = document.getElementById('selected-option');
+    const arrow = document.querySelector('.arrow');
+
+    // Открытие/закрытие списка
+    dropdownHeader.addEventListener('click', function () {
+        dropdownCustom.classList.toggle('open');
+    });
+
+    // Выбор варианта
+    dropdownOptions.querySelectorAll('li').forEach(option => {
+        option.addEventListener('click', function () {
+            const value = this.getAttribute('data-value');
+            const text = this.textContent;
+
+            // Устанавливаем значение скрытого поля
+            selectedOptionInput.value = value;
+
+            // Обновляем текст заголовка
+            dropdownHeader.querySelector('span').textContent = text;
+
+            // Закрываем список
+            dropdownCustom.classList.remove('open');
+        });
+    });
+
+    // Закрытие списка при клике вне его
+    document.addEventListener('click', function (event) {
+        if (!dropdownHeader.contains(event.target) && !dropdownOptions.contains(event.target)) {
+            dropdownCustom.classList.remove('open');
+        }
+    });
+});

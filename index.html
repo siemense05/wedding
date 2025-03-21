@@ -1,507 +1,425 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>wedding</title>
-        <script src="https://api-maps.yandex.ru/v3/?apikey=fdaf0168-d321-49ed-832e-3cd81229343a&lang=ru_RU"></script>
-        <link rel="shortcut icon" href="img/DS.svg" type="image/x-icon" />
-        <link rel="stylesheet" href="fonts/stylesheet.css" />
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body class="body">
-        <div class="wrapper">
-            <header class="header main__header">
-                <div class="container">
-                    <div class="header__inner">
-                        <div class="header__inner-top">
-                            <div class="nav">МЕНЮ</div>
-                        </div>
-                        <section class="header__inner-hero">
-                            <div class="container">
-                                <div class="hero__inner">
-                                    <div class="hero__content">
-                                        <h1>Дорогие родные и друзья</h1>
-                                        <p>
-                                            Мы рады сообщить, <br />что женимся!
-                                        </p>
-                                        <span>10 Июля 2025</span>
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>ПН</th>
-                                                    <th>ВТ</th>
-                                                    <th>СР</th>
-                                                    <th>ЧТ</th>
-                                                    <th>ПТ</th>
-                                                    <th>СБ</th>
-                                                    <th>ВС</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>7</td>
-                                                    <td>8</td>
-                                                    <td>9</td>
-                                                    <td class="heart">10</td>
-                                                    <td>11</td>
-                                                    <td>12</td>
-                                                    <td>13</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="hero__img">
-                                        <img
-                                            src="img/photo1.jpg"
-                                            alt="даша и семен"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wedding</title>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=fdaf0168-d321-49ed-832e-3cd81229343a&lang=ru_RU"></script>
+    <link rel="shortcut icon" href="img/DS.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <header class="header main__header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__inner-top">
+                        <div class="nav">МЕНЮ</div>
                     </div>
+                    <section class="header__inner-hero">
+                        <div class="container">
+                            <div class="hero__inner">
+                                <div class="hero__content">
+                                    <h1>Дорогие родные и друзья</h1>
+                                    <p>
+                                        Мы рады сообщить, <br />что женимся!
+                                    </p>
+                                    <span>10 Июля 2025</span>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>ПН</th>
+                                                <th>ВТ</th>
+                                                <th>СР</th>
+                                                <th>ЧТ</th>
+                                                <th>ПТ</th>
+                                                <th>СБ</th>
+                                                <th>ВС</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>8</td>
+                                                <td>9</td>
+                                                <td class="heart">10</td>
+                                                <td>11</td>
+                                                <td>12</td>
+                                                <td>13</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="hero__img">
+                                    <img src="img/photo1.jpg" alt="даша и семен" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </header>
-            <main class="main main__body">
-                <div class="main__body-inner">
-                    <section class="main__body-head-section">
-                        <div class="container">
-                            <div class="main__body-timer">
-                                <div class="timer">
-                                    <div class="timer__item timer__days">
-                                        00
-                                    </div>
-                                    <div class="separator">:</div>
-                                    <div class="timer__item timer__hours">
-                                        00
-                                    </div>
-                                    <div class="separator">:</div>
-                                    <div class="timer__item timer__minutes">
-                                        00
-                                    </div>
-                                    <div class="separator">:</div>
-                                    <div class="timer__item timer__seconds">
-                                        00
-                                    </div>
+            </div>
+        </header>
+        <main class="main main__body">
+            <div class="main__body-inner">
+                <section class="main__body-head-section">
+                    <div class="container">
+                        <div class="main__body-timer">
+                            <div class="timer">
+                                <div class="timer__item timer__days">
+                                    00
                                 </div>
-                            </div>
-                            <h2 class="main__body-title">Дарья+Семен</h2>
-                            <div class="swiper main__body-swiper">
-                                <div
-                                    class="swiper-wrapper main__body-swiper-wrapper"
-                                >
-                                    <div
-                                        class="swiper-slide main__body-swiper-slide"
-                                    >
-                                        <img src="img/we/photo1.jpg" alt="" />
-                                    </div>
-                                    <div
-                                        class="swiper-slide main__body-swiper-slide"
-                                    >
-                                        <img src="img/we/photo2.jpg" alt="" />
-                                    </div>
-                                    <div
-                                        class="swiper-slide main__body-swiper-slide"
-                                    >
-                                        <img src="img/we/photo3.jpg" alt="" />
-                                    </div>
-                                    <div
-                                        class="swiper-slide main__body-swiper-slide"
-                                    >
-                                        <img src="img/we/photo4.jpg" alt="" />
-                                    </div>
-                                    <div
-                                        class="swiper-slide main__body-swiper-slide"
-                                    >
-                                        <img src="img/we/photo5.jpg" alt="" />
-                                    </div>
-                                    <div
-                                        class="swiper-slide main__body-swiper-slide"
-                                    >
-                                        <img src="img/we/photo6.jpg" alt="" />
-                                    </div>
-                                    <div
-                                        class="swiper-slide main__body-swiper-slide"
-                                    >
-                                        <img src="img/we/photo7.jpg" alt="" />
-                                    </div>
-                                    <div
-                                        class="swiper-slide main__body-swiper-slide"
-                                    >
-                                        <img src="img/we/photo8.jpg" alt="" />
-                                    </div>
+                                <div class="separator">:</div>
+                                <div class="timer__item timer__hours">
+                                    00
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="timer__item timer__minutes">
+                                    00
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="timer__item timer__seconds">
+                                    00
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <section class="main__body-invite">
-                        <div class="container">
-                            <div>
-                                Мы хотим пригласить
-                                <span> ТЕБЯ </span>
-                                <br />
-                                на наш праздник!
+                        <h2 class="main__body-title">Дарья+Семен</h2>
+                        <div class="swiper main__body-swiper">
+                            <div class="swiper-wrapper main__body-swiper-wrapper">
+                                <div class="swiper-slide main__body-swiper-slide">
+                                    <img src="img/we/photo1.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide main__body-swiper-slide">
+                                    <img src="img/we/photo2.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide main__body-swiper-slide">
+                                    <img src="img/we/photo3.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide main__body-swiper-slide">
+                                    <img src="img/we/photo4.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide main__body-swiper-slide">
+                                    <img src="img/we/photo5.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide main__body-swiper-slide">
+                                    <img src="img/we/photo6.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide main__body-swiper-slide">
+                                    <img src="img/we/photo7.jpg" alt="" />
+                                </div>
+                                <div class="swiper-slide main__body-swiper-slide">
+                                    <img src="img/we/photo8.jpg" alt="" />
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__body-invite">
+                    <div class="container">
+                        <div>
+                            Мы хотим пригласить
+                            <span> ТЕБЯ </span>
+                            <br />
+                            на наш праздник!
+                        </div>
+                        <p>
+                            МЫ БУДЕМ ОЧЕНЬ <span>РАДЫ</span>,
+                            <br />
+                            ЕСЛИ ВЫ РАЗДЕЛИТЕ ЭТОТ <span>ВАЖНЫЙ ДЕНЬ</span>
+                            <br />
+                            С НАМИ!
+                        </p>
+                    </div>
+                </section>
+                <section class="main__body-dresscode">
+                    <div class="container">
+                        <div class="dresscode__wrapper">
+                            <h3 class="dresscode__title">Дресс-код</h3>
                             <p>
-                                МЫ БУДЕМ ОЧЕНЬ <span>РАДЫ</span>,
+                                Безусловно, главное для нас - это ваше
+                                присутствие!
                                 <br />
-                                ЕСЛИ ВЫ РАЗДЕЛИТЕ ЭТОТ <span>ВАЖНЫЙ ДЕНЬ</span>
+                                Мы будем рады, если у вас получится
+                                поддержать
                                 <br />
-                                С НАМИ!
+                                цветовую гамму нашей свадьбы:
                             </p>
-                        </div>
-                    </section>
-                    <section class="main__body-dresscode">
-                        <div class="container">
-                            <div class="dresscode__wrapper">
-                                <h3 class="dresscode__title">Дресс-код</h3>
-                                <p>
-                                    Безусловно, главное для нас - это ваше
-                                    присутствие!
-                                    <br />
-                                    Мы будем рады, если у вас получится
-                                    поддержать
-                                    <br />
-                                    цветовую гамму нашей свадьбы:
-                                </p>
-                                <div class="dresscode__colors">
-                                    <div class="dresscode__colors-scheme">
-                                        <ul class="scheme-colors">
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                        <ul class="scheme-name">
-                                            <li>Винный</li>
-                                            <li>Бордо</li>
-                                            <li>Пыльная роза</li>
-                                            <li>Нежно-розовый</li>
-                                            <li>Малахит</li>
-                                            <li>Серебро</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dresscode__examples-title">
-                                Мы подготовили примеры <br />нарядов в нашей
-                                цветовой гамме, вы можете их использовать,<br />
-                                как вдохновение
-                            </div>
-                            <div class="dresscode__examples">
-                                <div class="dresscode__examples-woman">
-                                    <span>Для неё:</span>
-                                    <div class="swiper swiper__examples">
-                                        <div
-                                            class="swiper-wrapper swiper__examples-wrapper"
-                                        >
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/woman/w1.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/woman/w2.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/woman/w3.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/woman/w5.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/woman/w4.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/woman/w6.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/woman/w7.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/woman/w8.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dresscode__examples-man">
-                                    <span>Для него:</span>
-                                    <div class="swiper swiper__examples">
-                                        <div
-                                            class="swiper-wrapper swiper__examples-wrapper"
-                                        >
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/man/m1.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/man/m2.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/man/m3.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/man/m4.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/man/m5.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/man/m6.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/man/m7.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide swiper__examples-slide"
-                                            >
-                                                <img
-                                                    src="img/expamles/man/m8.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main__body-place">
-                        <div class="container">
-                            <div class="place__info">
-                                <h3 class="place__title">Место проведения</h3>
-                                <div class="place__address">
-                                    <p>Банкет будет проходить по адресу:</p>
-                                    <address>
-                                        г. Ярославль, Которосльная набержная, 55
-                                    </address>
-                                </div>
-                            </div>
-                            <div class="place__photo-map">
-                                <div class="place__photo-slider">
-                                    <div class="swiper hotel-photos__swiper">
-                                        <div
-                                            class="swiper-wrapper hotel-photos__swiper-wrapper"
-                                        >
-                                            <div
-                                                class="swiper-slide hotel-photos__slide"
-                                            >
-                                                <img
-                                                    src="img/hotel/photo1.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide hotel-photos__slide"
-                                            >
-                                                <img
-                                                    src="img/hotel/photo2.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide hotel-photos__slide"
-                                            >
-                                                <img
-                                                    src="img/hotel/photo3.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide hotel-photos__slide"
-                                            >
-                                                <img
-                                                    src="img/hotel/photo4.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="swiper-slide hotel-photos__slide"
-                                            >
-                                                <img
-                                                    src="img/hotel/photo5.jpg"
-                                                    alt=""
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="swiper-scrollbar hotel-photos__scrollbar"
-                                    ></div>
-                                </div>
-                                <div class="map" id="map">
-                                    <script
-                                        type="text/javascript"
-                                        charset="utf-8"
-                                        async
-                                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f6c38aa233223fe076fede158fc06cc27f015e794ef70e613798b6978bb61d7&amp;width=455&amp;height=378&amp;lang=ru_RU&amp;scroll=true"
-                                    ></script>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="main__body-form">
-                        <div class="container">
-                            <div class="form__wrapper">
-                                <div class="form__schedule">
-                                    <ul>
-                                        <li>
-                                            <span> 11:30 </span>
-                                            <p>Роспись в ЗАГС</p>
-                                            <div></div>
-                                        </li>
-                                        <li>
-                                            <span> 16:30 </span>
-                                            <p>Сбор гостей</p>
-                                            <div></div>
-                                        </li>
-                                        <li>
-                                            <span> 22:00 </span>
-                                            <p>Торт</p>
-                                        </li>
+                            <div class="dresscode__colors">
+                                <div class="dresscode__colors-scheme">
+                                    <ul class="scheme-colors">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <ul class="scheme-name">
+                                        <li>Винный</li>
+                                        <li>Бордо</li>
+                                        <li>Пыльная роза</li>
+                                        <li>Нежно-розовый</li>
+                                        <li>Малахит</li>
+                                        <li>Серебро</li>
                                     </ul>
                                 </div>
-                                <div class="form-guest">
-                                    <h4>Анкета гостя</h4>
-                                    <p>
-                                        чтобы подтвердить ваше присутствие
-                                        <br />
-                                        и знать ваши предпочтения по еде
-                                    </p>
-                                    <a href="#">
-                                        <div>Анкета гостя</div>
-                                    </a>
+                            </div>
+                        </div>
+                        <div class="dresscode__examples-title">
+                            Мы подготовили примеры <br />нарядов в нашей
+                            цветовой гамме, вы можете их использовать,<br />
+                            как вдохновение
+                        </div>
+                        <div class="dresscode__examples">
+                            <div class="dresscode__examples-woman">
+                                <span>Для неё:</span>
+                                <div class="swiper swiper__examples">
+                                    <div class="swiper-wrapper swiper__examples-wrapper">
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/woman/w1.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/woman/w2.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/woman/w3.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/woman/w5.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/woman/w4.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/woman/w6.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/woman/w7.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/woman/w8.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dresscode__examples-man">
+                                <span>Для него:</span>
+                                <div class="swiper swiper__examples">
+                                    <div class="swiper-wrapper swiper__examples-wrapper">
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/man/m1.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/man/m2.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/man/m3.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/man/m4.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/man/m5.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/man/m6.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/man/m7.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide swiper__examples-slide">
+                                            <img src="img/expamles/man/m8.jpg" alt="" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
-            </main>
-            <footer class="footer main__footer">
-                <div class="container">
-                    <div class="main__footer-inner">
-                        <h3 class="footer__header">
-                            Если у вас остались вопросы, напишите нам:
-                        </h3>
-                        <div class="footer__contact">
-                            <div class="bride">
-                                <h5 class="bride__title">Невеста</h5>
-                                <ul>
-                                    <li>
-                                        <a href="t.me/daryakorotkova23"
-                                            >TG: @daryakorotkova23</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="vk.com/dashalis1"
-                                            >VK: Короткова Дарья</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="tel:+79676772323"
-                                            >Tel: +79676772323</a
-                                        >
-                                    </li>
-                                </ul>
+                    </div>
+                </section>
+                <section class="main__body-place">
+                    <div class="container">
+                        <div class="place__info">
+                            <h3 class="place__title">Место проведения</h3>
+                            <div class="place__address">
+                                <p>Банкет будет проходить по адресу:</p>
+                                <address>
+                                    г. Ярославль, Которосльная набержная, 55
+                                </address>
                             </div>
-                            <div class="groom">
-                                <h5 class="groom__title">Жених</h5>
-                                <ul>
-                                    <li>
-                                        <a href="t.me/siemens05"
-                                            >TG: @siemens05</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="tel:+79300760517"
-                                            >Tel: +79300760517</a
-                                        >
-                                    </li>
-                                </ul>
+                        </div>
+                        <div class="place__photo-map">
+                            <div class="place__photo-slider">
+                                <div class="swiper hotel-photos__swiper">
+                                    <div class="swiper-wrapper hotel-photos__swiper-wrapper">
+                                        <div class="swiper-slide hotel-photos__slide">
+                                            <img src="img/hotel/photo1.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide hotel-photos__slide">
+                                            <img src="img/hotel/photo2.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide hotel-photos__slide">
+                                            <img src="img/hotel/photo3.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide hotel-photos__slide">
+                                            <img src="img/hotel/photo4.jpg" alt="" />
+                                        </div>
+                                        <div class="swiper-slide hotel-photos__slide">
+                                            <img src="img/hotel/photo5.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-scrollbar hotel-photos__scrollbar"></div>
+                            </div>
+                            <div class="map" id="map">
+                                <script type="text/javascript" charset="utf-8" async
+                                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f6c38aa233223fe076fede158fc06cc27f015e794ef70e613798b6978bb61d7&amp;width=455&amp;height=378&amp;lang=ru_RU&amp;scroll=true"></script>
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class="main__body-form">
+                    <div class="container">
+                        <div class="form__wrapper">
+                            <div class="form__schedule">
+                                <ul>
+                                    <li>
+                                        <span> 11:30 </span>
+                                        <p>Роспись в ЗАГС</p>
+                                        <div></div>
+                                    </li>
+                                    <li>
+                                        <span> 16:30 </span>
+                                        <p>Сбор гостей</p>
+                                        <div></div>
+                                    </li>
+                                    <li>
+                                        <span> 22:00 </span>
+                                        <p>Торт</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form-guest">
+                                <h4>Анкета гостя</h4>
+                                <p>
+                                    чтобы подтвердить ваше присутствие
+                                    <br />
+                                    и знать ваши предпочтения по еде
+                                </p>
+                                <a href="#" class="form-guest__button">
+                                    <div>Анкета гостя</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer main__footer">
+            <div class="container">
+                <div class="main__footer-inner">
+                    <h3 class="footer__header">
+                        Если у вас остались вопросы, напишите нам:
+                    </h3>
+                    <div class="footer__contact">
+                        <div class="bride">
+                            <h5 class="bride__title">Невеста</h5>
+                            <ul>
+                                <li>
+                                    <a href="t.me/daryakorotkova23">TG: @daryakorotkova23</a>
+                                </li>
+                                <li>
+                                    <a href="vk.com/dashalis1">VK: Короткова Дарья</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+79676772323">Tel: +79676772323</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="groom">
+                            <h5 class="groom__title">Жених</h5>
+                            <ul>
+                                <li>
+                                    <a href="t.me/siemens05">TG: @siemens05</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+79300760517">Tel: +79300760517</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
+        <div class="modal">
+            <div class="modal__window">
+                <a href="#" class="modal__close">
+                    <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <clipPath id="clip41_441">
+                                <rect rx="11.250000" width="22.500000" height="22.500000"
+                                    transform="translate(0.750000 0.750000)" fill="white" fill-opacity="0"></rect>
+                            </clipPath>
+                        </defs>
+                        <rect rx="11.250000" width="22.500000" height="22.500000"
+                            transform="translate(0.750000 0.750000)" fill="#FFFFFF" fill-opacity="0"></rect>
+                        <g clip-path="url(#clip41_441)">
+                            <path d="M6.75 17.24L12 12L17.24 17.24M17.24 6.75L12 12L6.75 6.75" stroke="#D9D9D9"
+                                stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"
+                                stroke-linecap="round"></path>
+                        </g>
+                        <rect rx="11.250000" width="22.500000" height="22.500000"
+                            transform="translate(0.750000 0.750000)" stroke="#D9D9D9" stroke-opacity="1.000000"
+                            stroke-width="1.500000"></rect>
+                    </svg>
+                </a>
+                <h4 class="modal__title">Анкета гостя</h4>
+                <form class="modal__form" action="/submit" method="POST">
+                    <label>
+                        Ваше имя и фамилия:
+                        <input type="text" />
+                    </label>
+                    <label>Будете ли вы:</label>
+                    <div class="modal__form-checkboxes">
+                        <input type="checkbox" class="zags" />
+                        <input type="checkbox" class="banket" />
+                    </div>
+                    <label>
+                        Что будете есть:
+                        <div class="modal__form-dropdown custom-dropdown">
+                            <div class="form-dropdown__header dropdown-header">
+                                <span>Выбрать</span>
+                                <span class="arrow">▼</span>    
+                            </div>
+                            <ul class="form-dropdown__options dropdown-options">
+                                <li data-value="option1">Вариант 1</li>
+                                <li data-value="option2">Вариант 2</li>
+                            </ul>
+                            <input required type="hidden" name="selected-option" id="selected-option" value="">
+                        </div>
+                    </label>
+                    <label class="modal__form-label--inline">
+                        <div class="modal__form-label-text">
+                            Вы приедете на машине:
+                            <span>*Если нет, не ставьте галочку</span>
+                        </div>
+                        <input type="checkbox" />
+                    </label>
+                    <label>
+                        Комментарий:
+                        <textarea class="modal__form-textarea" rows="4"></textarea>
+                    </label>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
         </div>
-        <script src="js/swiper-bundle.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>

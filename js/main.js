@@ -1,11 +1,10 @@
-
-
 const swiperBody = new Swiper(".main__body-swiper", {
     slidesPerView: 3,
     grabCursor: true,
     spaceBetween: 0,
     centeredSlides: true,
     initialSlide: 1,
+    loop: true,
 });
 
 const swiperExamples = new Swiper(".swiper__examples", {
@@ -14,8 +13,15 @@ const swiperExamples = new Swiper(".swiper__examples", {
     spaceBetween: 0,
     centeredSlides: true,
     initialSlide: 1,
+    loop: true,
 });
 
+const swiperHotel = new Swiper(".hotel-photos__swiper", {
+    slidesPerView: 1,
+    scrollbar: {
+        el: ".hotel-photos__scrollbar",
+    },
+});
 
 
 document.addEventListener("DOMContentLoaded", () => {

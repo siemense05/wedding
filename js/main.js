@@ -1,19 +1,43 @@
 const swiperBody = new Swiper(".main__body-swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1.2,
     grabCursor: true,
     spaceBetween: 0,
     centeredSlides: true,
     initialSlide: 1,
     loop: true,
+    breakpoints: {
+        // when window width is >= 320px
+        1051: {
+            slidesPerView: 3,
+        },
+        851: {
+            slidesPerView: 2.2,
+        },
+        601: {
+            slidesPerView: 1.6,
+        }
+    }
 });
 
 const swiperExamples = new Swiper(".swiper__examples", {
-    slidesPerView: 3,
+    slidesPerView: 1.2,
     grabCursor: true,
     spaceBetween: 0,
     centeredSlides: true,
     initialSlide: 1,
     loop: true,
+    breakpoints: {
+        // when window width is >= 320px
+        1051: {
+            slidesPerView: 3,
+        },
+        851: {
+            slidesPerView: 2.2,
+        },
+        601: {
+            slidesPerView: 1.6,
+        }
+    }
 });
 
 const swiperHotel = new Swiper(".hotel-photos__swiper", {

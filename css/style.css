@@ -303,16 +303,6 @@ label.modal__form-label--inline input[type="checkbox"] {
     position: relative;
 }
 
-.main__header::after {
-    content: url("../img/header-line.png");
-    position: absolute;
-    right: 14%;
-    top: -10%;
-    z-index: -1;
-}
-
-
-
 .header__inner-top {
     display: flex;
     justify-content: center;

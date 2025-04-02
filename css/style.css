@@ -505,11 +505,21 @@ td {
 
 .main__body-invite p {
     font-size: 35px;
-    line-height: 2;
+    line-height: 1.7;
+    white-space: nowrap;
 }
 
 .main__body-invite p span {
-    text-decoration: underline #5f9178;
+    position: relative;
+}
+.main__body-invite p span::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #5f9178;
 }
 
 .br-wrap {
@@ -725,7 +735,7 @@ td {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url("../img/scheldueBG.jpg") 50% 50% no-repeat;
+    background: #5f9178;
     padding: 50px 10px;
     color: #fff;
     font-size: 30px;
@@ -843,6 +853,7 @@ td {
     position: absolute;
     top: 50%;
     left: -10px;
+    transform: translateY(-50%);
     display: block;
     height: 6px;
     width: 6px;
@@ -1023,7 +1034,7 @@ td {
         height: 101px;
     }
     .dresscode__examples-title {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 60px;
     }
     .dresscode__examples span {
@@ -1045,19 +1056,19 @@ td {
         font-size: 65px;
     }
     .form-guest p {
-        font-size: 18px;
+        font-size: 22px;
     }
     .form-guest a div {
         font-size: 18px;
     }
     /* ================== */
     .footer__title {
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
     .bride__title,
     .groom__title {
-        font-size: 20px;
+        font-size: 18px;
     }
     .bride li,
     .groom li {
@@ -1073,14 +1084,9 @@ td {
 }
 
 @media (width <= 600px) {
-    .hero__content h1 {
-        font-size: 40px;
-    }
-    .hero__content p {
-        font-size: 20px;
-    }
     .hero__content span {
-        font-size: 45px;
+        font-size: 40px;
+        margin-bottom: 20px;
     }
     .hero__inner::after {
         top: -46%;
@@ -1092,12 +1098,9 @@ td {
         min-height: 500px;
         width: 300px;
     }
-    .hero__content th, td {
-        padding: 10px;
-    }
     .heart::after {
-        top: -6px;
-        left: -9px;
+        top: -7px;
+        left: -10px;
     }
     /* ============ */
     .timer {
@@ -1120,7 +1123,7 @@ td {
         font-size: 25px;
     }
     .main__body-invite p {
-        font-size: 20px;
+        font-size: 18px;
     }
     .br-wrap {
         display: block;

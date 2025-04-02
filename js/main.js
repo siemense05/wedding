@@ -126,7 +126,7 @@ function closeModal(e) {
 
     if (target.closest('.modal__close') || target.classList.contains('modal') || target.classList.contains('button') || e.code === 'Escape'
     )
-        
+    e.preventDefault()
     document.body.classList.remove('body--opened-modal')
 }
 

@@ -526,7 +526,7 @@ td {
 .main__body-invite p span::after {
     content: '';
     position: absolute;
-    bottom: 3px;
+    bottom: 0px;
     left: 0;
     height: 2px;
     width: 100%;
@@ -785,19 +785,25 @@ td {
 
 .form-guest {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-guest h4 {
     font-size: 75px;
 }
 .form-guest p {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .form-guest a {
+    width: 100%;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     padding: 9px 15px;
     display: block;
@@ -825,7 +831,6 @@ td {
 /* ========================================== */
 
 .main__footer {
-    min-height: 208px;
     background: var(--accent-text);
     color: #fff;
 
@@ -834,10 +839,14 @@ td {
     align-items: center;
 }
 
+.main__footer-inner {
+    padding: 10px 20px;
+}
+
 .footer__title {
     font-family: "Forum", "Arial", serif;
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .footer__contact {
@@ -855,7 +864,7 @@ td {
     font-family: "Forum", "Arial", serif;
     margin-bottom: 5px;
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .groom__title::before,
@@ -876,7 +885,7 @@ td {
 .groom li {
     transition: all 0.4s;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .bride li:last-child,
@@ -1070,7 +1079,7 @@ td {
         font-size: 22px;
     }
     .form-guest a div {
-        font-size: 18px;
+        font-size: 22px;
     }
     /* ================== */
     .footer__title {
@@ -1161,41 +1170,30 @@ td {
     }
     .dresscode__wrapper p {
         font-size: 16px;
-    }.dresscode__colors {
-        display: none;
     }
-    .dresscode__colors--mobile {
-        display: block;
-        margin-bottom: 45px;
-    }
-    .dresscode__colors-scheme {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+
     .scheme-colors {
-        display: block;
-        padding: 0;
-        background: none;
-        box-shadow: none;
-        justify-self: end;
+    justify-content: stretch;
+    gap: 18px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
     }
+
     .scheme-colors li {
         height: 50px;
-        width: 50px;
-        margin-bottom: 5px;
+        width: 40px;
     }
+
+    .scheme-colors li:nth-child(6) {
+        background: url(../img/sliver.jpg) 30% 57% no-repeat;
+    }
+
     .scheme-name {
-        display: block;
-        padding: 0;
-    } 
-    .scheme-name li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-height: 50px;
-        height: 100%;
-        margin-bottom: 5px;
+        font-size: 12px;
+        padding: 0px 6px;
+        gap: 0;
     }
+
     /* ============== */
     .dresscode__examples-title {
         margin-bottom: 40px;

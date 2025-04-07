@@ -1,5 +1,6 @@
 const swiperBody = new Swiper(".main__body-swiper", {
     slidesPerView: 1.2,
+    lazy: true,
     grabCursor: true,
     spaceBetween: 0,
     centeredSlides: true,

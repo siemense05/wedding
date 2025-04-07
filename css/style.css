@@ -129,7 +129,7 @@ label.modal__form-label--inline input[type="checkbox"] {
 
 .modal__form label input:not([type="checkbox"]),
 .modal__form label textarea{
-    font-family: "Jost", "Arial", serif;
+    font-family: "Forum", "Arial", serif;
     outline: none;
     padding: 5px 10px;
     font-size: 20px;
@@ -147,13 +147,14 @@ label.modal__form-label--inline input[type="checkbox"] {
 }
 
 .modal__form button {
-    font-family: "Jost", "Arial", serif;
+    font-family: "Forum", "Arial", serif;
     font-size: 20px;
     background: transparent;
     border-radius: 20px;
     border: 1px solid #999;
     transition: all .4s;
     padding: 5px 10px;
+    color: var(--text-color);
 }
 
 .modal__form button:hover {
@@ -909,7 +910,7 @@ td {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 3px;
+    bottom: 0;
     width: 100%;
     height: 1px;
     background-color: #fff;
@@ -1154,6 +1155,10 @@ td {
         transform: scale(0.7);
     }
 
+    .main__body-invite p span::after {
+        height: 1px;
+    }
+
     .br-wrap {
         display: block;
     }
@@ -1174,14 +1179,14 @@ td {
 
     .scheme-colors {
     justify-content: stretch;
-    gap: 18px;
+    gap: 5px;
     padding: 5px 15px;
     margin-bottom: 10px;
     }
 
     .scheme-colors li {
         height: 50px;
-        width: 40px;
+        width: 50px;
     }
 
     .scheme-colors li:nth-child(6) {
@@ -1190,7 +1195,7 @@ td {
 
     .scheme-name {
         font-size: 12px;
-        padding: 0px 6px;
+        padding: 0px 13px;
         gap: 0;
     }
 
@@ -1204,6 +1209,7 @@ td {
     /* ============= */
     .place__title {
         font-size: 45px;
+        margin-bottom: 10px;
     }
     .place__address {
         font-size: 18px;
@@ -1223,4 +1229,5 @@ td {
     }
 
 }
+
 

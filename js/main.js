@@ -169,3 +169,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const textarea = document.querySelector('.modal__form-textarea');
+    if (window.innerHeight < 700) {
+        textarea.setAttribute('rows', '1');
+    }
+});

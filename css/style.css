@@ -1112,6 +1112,7 @@ td {
     .hero__inner::after {
         top: -77%;
         right: -102%;
+        
     }
     .hero__inner h4 {
         font-size: 50px;
@@ -1122,7 +1123,8 @@ td {
     }
     .heart::after {
         top: -7px;
-        left: -10px;
+        left: -11px;
+        transform: scale(.6);
     }
     /* ============ */
     .timer {
@@ -1170,9 +1172,7 @@ td {
         font-size: 55px;
         margin-bottom: 10px;
     }
-    .dresscode__wrapper {
-        margin-bottom: 10px;
-    }
+
     .dresscode__wrapper p {
         font-size: 16px;
     }
@@ -1195,7 +1195,7 @@ td {
 
     .scheme-name {
         font-size: 12px;
-        padding: 0px 13px;
+        padding: 0px 13px 15px;
         gap: 0;
     }
 

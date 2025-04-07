@@ -19,7 +19,19 @@
             <div class="container">
                 <div class="header__inner">
                     <div class="header__inner-top">
-                        <div class="nav">МЕНЮ</div>
+                        <nav class="header__nav">
+                            <ul>
+                                <li>
+                                    <a href="#dresscode">Дресс-код</a>
+                                </li>
+                                <li>
+                                    <a href="#place">Место проведения</a>
+                                </li>
+                                <li>
+                                    <a href="#form">Важная анкета</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <section class="header__inner-hero">
                         <div class="container">
@@ -163,7 +175,7 @@
                         </p>
                     </div>
                 </section>
-                <section class="main__body-dresscode">
+                <section class="main__body-dresscode" id="dresscode">
                     <div class="container">
                         <div class="dresscode__wrapper">
                             <h3 class="dresscode__title">Дресс-код</h3>
@@ -268,7 +280,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main__body-place">
+                <section class="main__body-place" id="place">
                     <div class="container">
                         <div class="place__info">
                             <h3 class="place__title">Место проведения</h3>
@@ -310,7 +322,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main__body-form">
+                <section class="main__body-form" id="form">
                     <div class="container">
                         <div class="form__wrapper">
                             <div class="form__schedule">
@@ -410,7 +422,7 @@
                 <form class="modal__form" action="/submit" method="POST">
                     <label>
                         Ваше имя и фамилия:
-                        <input type="text" />
+                        <input required type="text" />
                     </label>
                     <label>Будете ли вы:</label>
                     <div class="modal__form-checkboxes">
@@ -425,8 +437,9 @@
                                 <span class="arrow">▼</span>
                             </div>
                             <ul class="form-dropdown__options dropdown-options">
-                                <li data-value="option1">Вариант 1</li>
-                                <li data-value="option2">Вариант 2</li>
+                                <li data-value="Форель">Стейк Карельской форели с теплым картофельным салатом</li>
+                                <li data-value="Говядина">Медальоны из говядины с беби картофелем и соусом из вешенок</li>
+                                <li data-value="Детское">Детское меню до 14 лет</li>
                             </ul>
                             <input required type="hidden" name="selected-option" id="selected-option" value="">
                         </div>

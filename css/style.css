@@ -185,7 +185,7 @@ label.modal__form-label--inline input[type="checkbox"] {
 }
 
 .modal__form input[type="checkbox"]{
-    font-family: "Jost", "Arial", serif;
+    font-family: "Forum", "Arial", serif;
     appearance: none;
     flex-shrink: 0;
     border: 1.50px solid #5f9178;
@@ -217,7 +217,7 @@ label.modal__form-label--inline input[type="checkbox"] {
 
 .custom-dropdown {
     position: relative;
-    font-family: "Jost", "Arial", serif;
+    font-family: "Forum", "Arial", serif;
     margin-bottom: 20px; /* Отступ для красоты */
 }
 
@@ -835,7 +835,7 @@ td {
 }
 
 .footer__title {
-    font-family: "Jost", "Arial", serif;
+    font-family: "Forum", "Arial", serif;
     margin-bottom: 15px;
     font-size: 25px;
 }
@@ -852,7 +852,7 @@ td {
 
 .bride__title,
 .groom__title {
-    font-family: "Jost", "Arial", serif;
+    font-family: "Forum", "Arial", serif;
     margin-bottom: 5px;
     position: relative;
     font-size: 25px;

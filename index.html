@@ -419,15 +419,15 @@
                     </svg>
                 </a>
                 <h4 class="modal__title">Анкета гостя</h4>
-                <form class="modal__form" action="/submit" method="POST">
+                <form name="submit-to-google-sheet" id="form" class="modal__form">
                     <label>
                         Ваше имя и фамилия:
-                        <input required type="text" />
+                        <input id="name" name="name" required type="text" />
                     </label>
                     <label>Будете ли вы:</label>
                     <div class="modal__form-checkboxes">
-                        <input type="checkbox" class="zags" />
-                        <input type="checkbox" class="banket" />
+                        <input name="zags" value="+" type="checkbox" class="zags" />
+                        <input name="banket" value="+" type="checkbox" class="banket" />
                     </div>
                     <label>
                         Что будете есть:
@@ -441,7 +441,7 @@
                                 <li data-value="Говядина">Медальоны из говядины с беби картофелем и соусом из вешенок</li>
                                 <li data-value="Детское">Детское меню до 14 лет</li>
                             </ul>
-                            <input required type="hidden" name="selected-option" id="selected-option" value="">
+                            <input required type="hidden" name="selectedOption" id="selected-option" value="">
                         </div>
                     </label>
                     <label class="modal__form-label--inline">
@@ -449,19 +449,40 @@
                             Вы приедете на машине:
                             <span>*Если нет, не ставьте галочку</span>
                         </div>
-                        <input type="checkbox" />
+                        <input name="car" type="checkbox" />
                     </label>
                     <label>
                         Комментарий:
-                        <textarea class="modal__form-textarea" rows="4"></textarea>
+                        <textarea id="comment" name="comment" class="modal__form-textarea" rows="4"></textarea>
                     </label>
-                    <button type="submit">Отправить</button>
+                    <button id="submit" type="submit">Отправить</button>
+                    <span id="sendText">
+                        
+                    </span>
                 </form>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycby44r9eYnBKJS8NWJlA-wJ5xEq0LAMI_CDSJw1uyCIOskaFp0Ms2DIz5Kr_WL6QraK_Pg/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                    const sendText = document.getElementById('sendText')
+        
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, {
+                                method: 'POST',
+                                body: new FormData(form)
+                            })
+                            .then(response => {
+                                sendText.innerHTML = 'Спасибо, ваш ответ записан!'
+                            })
+                            .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
             </div>
         </div>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fslightbox.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -447,46 +447,78 @@
                             Вы приедете на машине:
                             <span>*Если нет, не ставьте галочку</span>
                         </div>
-                        <input name="car" type="checkbox" />
+                        <input value="+" name="car" type="checkbox" />
                     </label>
                     <label>
                         Комментарий:
                         <textarea id="comment" name="comment" class="modal__form-textarea" rows="4"></textarea>
                     </label>
-                    <button id="submit" type="submit">Отправить</button>
-                    <span id="sendText">
-
-                    </span>
+                    <button id="submit" type="submit">
+                        <span class="button-content">Отправить</span>
+                    </button>
                 </form>
                 <script>
                     const scriptURL = 'https://script.google.com/macros/s/AKfycby44r9eYnBKJS8NWJlA-wJ5xEq0LAMI_CDSJw1uyCIOskaFp0Ms2DIz5Kr_WL6QraK_Pg/exec'
                     const form = document.forms['submit-to-google-sheet']
-                    const sendText = document.getElementById('sendText')
+                    const submitButton = document.getElementById('submit')
+                    const buttonContent = submitButton.querySelector('.button-content')
 
                     form.addEventListener('submit', e => {
                         e.preventDefault()
 
-                        // Показываем спиннер и меняем текст кнопки
-                        const originalText = sendText.innerHTML
-                        sendText.innerHTML = `<span class="spinner"></span>Отправка...`
+                        // Сохраняем оригинальный текст
+                        const originalText = buttonContent.textContent
+
+                        // Показываем спиннер
+                        buttonContent.innerHTML = `<span class="spinner"></span><span>Отправка...</span>`
+                        buttonContent.style.opacity = '1' // Убедимся, что контент видим
 
                         fetch(scriptURL, {
                             method: 'POST',
                             body: new FormData(form)
                         })
                             .then(response => {
-                                sendText.innerHTML = 'Спасибо, ваш ответ записан!'
-                                setTimeout(function () {
-                                    sendText.innerHTML = originalText
-                                }, 5000)
+                                // Плавно скрываем текущий контент
+                                buttonContent.style.opacity = '0'
+
+                                setTimeout(() => {
+                                    // Показываем сообщение об успехе
+                                    buttonContent.innerHTML = '<span class="success-message">Спасибо, ваш ответ записан!</span>'
+                                    buttonContent.style.opacity = '1'
+
+                                    // Активируем анимацию появления
+                                    setTimeout(() => {
+                                        const messageElement = buttonContent.querySelector('.success-message')
+                                        messageElement.classList.add('show')
+                                    }, 10)
+
+                                    // Через 3 секунды возвращаем исходное состояние
+                                    setTimeout(() => {
+                                        buttonContent.style.opacity = '0'
+                                        setTimeout(() => {
+                                            buttonContent.innerHTML = originalText
+                                            buttonContent.style.opacity = '1'
+                                        }, 300)
+                                    }, 3000)
+                                }, 300)
+
                                 form.reset()
                             })
                             .catch(error => {
                                 console.error('Error!', error.message)
-                                sendText.innerHTML = 'Ошибка отправки'
-                                setTimeout(function () {
-                                    sendText.innerHTML = originalText
-                                }, 3000)
+                                buttonContent.style.opacity = '0'
+                                setTimeout(() => {
+                                    buttonContent.innerHTML = '<span>Ошибка отправки</span>'
+                                    buttonContent.style.opacity = '1'
+
+                                    setTimeout(() => {
+                                        buttonContent.style.opacity = '0'
+                                        setTimeout(() => {
+                                            buttonContent.innerHTML = originalText
+                                            buttonContent.style.opacity = '1'
+                                        }, 300)
+                                    }, 2000)
+                                }, 300)
                             })
                     })
                 </script>
@@ -495,7 +527,6 @@
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fslightbox.js"></script>
-    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
 </body>
 

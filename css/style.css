@@ -105,6 +105,7 @@ h6 {
 .modal__form {
     display: flex;
     flex-direction: column;
+    transition: var(--transition);
 }
 
 .modal__form label {
@@ -171,30 +172,6 @@ label.modal__form-label--inline input[type="checkbox"] {
     display: flex;
     justify-content: space-evenly;
     padding: 20px 0 10px;
-}
-
-#sendText {
-    color: var(--accent-text);
-    text-align: center;
-    font-size: 24px;
-    padding: 15px 0 0;
-}
-
-.spinner {
-    border: 3px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    border-top: 3px solid #000;
-    width: 20px;
-    height: 20px;
-    animation: spin 1s linear infinite;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 .zags::before{
@@ -326,10 +303,49 @@ label.modal__form-label--inline input[type="checkbox"] {
     resize: vertical;
 }
 
+#submit {
+    position: relative;
+    min-height: 44px; /* Фиксированная высота для кнопки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-content {
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.success-message {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.success-message.show {
+    opacity: 1;
+}
+
 /* ========================================== */
 
 .main__header {
-    margin-bottom: 100px;
+    margin: 20px 0 100px;
 }
 
 .header__inner-top {
@@ -1264,6 +1280,26 @@ td {
     /* ==================== */
     .form__schedule ul {
         font-size: 24px;
+    }
+    /* ====================== */
+    .modal__title {
+        font-size: 50px;
+    }
+    .modal__form label {
+        font-size: 20px;
+    }
+    .zags::before, .banket::before{
+        font-size: 18px;
+    }
+    .modal__form input[type="checkbox"] {
+        height: 18px;
+        width: 18px;
+    }
+    .dropdown-header {
+        font-size: 18px;
+    }
+    .dropdown-options li {
+        font-size: 18px;
     }
 
 }

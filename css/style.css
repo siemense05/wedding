@@ -728,6 +728,7 @@ td {
 .place__address {
     font-size: 26px;
     margin-bottom: 30px;
+    line-height: 1.4;
 }
 .place__photo-map {
     position: relative;
